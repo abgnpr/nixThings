@@ -1,0 +1,50 @@
+#! /bin/bash
+
+echo && echo Debug Session && echo
+
+if (($# < 1))
+then
+    echo No files supplied for debugging.
+    echo
+    exit 1
+
+elif (($# > 1))
+then
+    echo Cannot accept more than 1 file for debugging.
+    echo
+    exit 1
+fi
+ 
+fullfilename=$(basename -- "$1")
+extension="${fullfilename##*.}"
+filename="${fullfilename%.*}"
+
+if [ ! -f "$1" ]
+then
+    echo File does not exist!
+    echo
+    exit 1
+
+elif [ "$extension" == "c" ]
+then
+    gcc -g -o $HOME/bin/$filename.out $1
+    gdb -q $HOME/bin/$filename.out
+    echo
+    echo Session End
+
+elif [[ "$extension" == "cpp" || "$extension" == "cc" ]]
+then
+    g++ -g -o $HOME/bin/$filename.out $1
+    gdb -q $HOME/bin/$filename.out
+    echo
+    echo Session End
+   
+else
+    echo Source is not a valid c or c++ file!
+    echo
+    exit 1
+
+fi
+
+echo
+exit 0
