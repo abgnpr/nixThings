@@ -1,5 +1,5 @@
 # nixThings
-**Some scripts to make coding on *nix sysmtems easier.**
+**Some scripts to make coding on *nix systems easier.**
 
 ## Brief
 `.vimrc:` a vim script that makes compiling, running and running C and C++
