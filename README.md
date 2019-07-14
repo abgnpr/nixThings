@@ -2,7 +2,7 @@
 **Some scripts to make coding on *nix systems easier.**
 
 ## Brief
-`.vimrc:` a vim script that makes compiling, running and running C and C++
+`.vimrc:` a vim script that makes compiling, running and debugging C and C++
 programs super-easy.
 
 `debug:` a bash script that loads the GNU gdb for the give C/C++ file.
