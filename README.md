@@ -60,7 +60,6 @@ mode, press ESC before using any of these.
  * F6 - Compile and run current C program.
  * F7 - Compile and run current C++ program.
  * F8 - Debug a C or C++ program.
-
  * F9 - Run current python file.
 
 #### Debugging
