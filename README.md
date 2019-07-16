@@ -9,7 +9,7 @@ programs super-easy.
 
 ## Installation
 
-Pre-reqisites
+Pre-requisites
  * You need a directory named 'bin' in your
    $HOME directory. Make sure you own it.
  * You must have gcc, g++ and gdb installed.
@@ -59,7 +59,7 @@ mode, press ESC before using any of these.
         (%HOME/bin/a.out)
  * F6 - Compile and run current C program.
  * F7 - Compile and run current C++ program.
- * F8 - Debug a C or C++ program.
+ * F8 - Debug current C/C++ program.
  * F9 - Run current python file.
 
 #### Debugging
@@ -73,6 +73,4 @@ debug myfile.cpp
 ### NOTES
 _Keys Mapped_ : **F5, F6, F7, F8, and F9.**
 
-If you have any of these keys already
-mapped for some function, you are suggested to
-make the necessary remappings.
+If you have any of these keys already mapped for some function, you are suggested to make the necessary re-mappings.
